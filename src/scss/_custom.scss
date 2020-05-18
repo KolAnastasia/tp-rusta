@@ -1,0 +1,28 @@
+@import 'variables';
+
+// 1. Your custom variables and variable overwrites.
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+    position: relative;
+}
+
+.page_wrapper {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+// 3. Your custom mixin overwrites.
+
+@import 'variables';
+$slick-font-path: "~slick-carousel/slick/fonts/" !default;
+$slick-loader-path: "~slick-carousel/slick/" !default;
+
+@import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
+// @import 'slick-carousel/slick/slick-theme.scss';
+// @import 'slick-carousel/slick/slick.scss'

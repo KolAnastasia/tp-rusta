@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Hairline'), local('Roboto-Hairline'), url('../fonts/Robotohairline.woff2') format('woff2'), url('../fonts/Robotohairline.woff') format('woff'), url('../fonts/Robotohairline.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Robotolight.woff2') format('woff2'), url('../fonts/Robotolight.woff') format('woff'), url('../fonts/Robotolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2'), url('../fonts/Roboto.woff') format('woff'), url('../fonts/Roboto.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Robotobold.woff2') format('woff2'), url('../fonts/Robotobold.woff') format('woff'), url('../fonts/Robotobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black'), local('Roboto-Black'), url('../fonts/Robotoblack.woff2') format('woff2'), url('../fonts/Robotoblack.woff') format('woff'), url('../fonts/Robotoblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'TT Compotes Basilic Shadow';
+  src: url('TTCompotes-BasilicShadow.eot');
+  src: local('TT Compotes Basilic Shadow'), local('TTCompotes-BasilicShadow'),
+      url('TTCompotes-BasilicShadow.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-BasilicShadow.woff2') format('woff2'),
+      url('TTCompotes-BasilicShadow.woff') format('woff'),
+      url('TTCompotes-BasilicShadow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Apple';
+  src: url('TTCompotes-Apple.eot');
+  src: local('TT Compotes Apple'), local('TTCompotes-Apple'),
+      url('TTCompotes-Apple.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-Apple.woff2') format('woff2'),
+      url('TTCompotes-Apple.woff') format('woff'),
+      url('TTCompotes-Apple.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Dew';
+  src: url('TTCompotes-Dew.eot');
+  src: local('TT Compotes Dew'), local('TTCompotes-Dew'),
+      url('TTCompotes-Dew.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-Dew.woff2') format('woff2'),
+      url('TTCompotes-Dew.woff') format('woff'),
+      url('TTCompotes-Dew.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Compotes Dew Slim Shadow';
+  src: url('TTCompotes-DewSlimShadow.eot');
+  src: local('TT Compotes Dew Slim Shadow'), local('TTCompotes-DewSlimShadow'),
+      url('TTCompotes-DewSlimShadow.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-DewSlimShadow.woff2') format('woff2'),
+      url('TTCompotes-DewSlimShadow.woff') format('woff'),
+      url('TTCompotes-DewSlimShadow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Basilic';
+  src: url('TTCompotes-Basilic.eot');
+  src: local('TT Compotes Basilic'), local('TTCompotes-Basilic'),
+      url('TTCompotes-Basilic.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-Basilic.woff2') format('woff2'),
+      url('TTCompotes-Basilic.woff') format('woff'),
+      url('TTCompotes-Basilic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Apple Rough';
+  src: url('TTCompotes-AppleRough.eot');
+  src: local('TT Compotes Apple Rough'), local('TTCompotes-AppleRough'),
+      url('TTCompotes-AppleRough.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-AppleRough.woff2') format('woff2'),
+      url('TTCompotes-AppleRough.woff') format('woff'),
+      url('TTCompotes-AppleRough.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Espresso';
+  src: url('TTCompotes-EspressoBold.eot');
+  src: local('TT Compotes Espresso Bold'), local('TTCompotes-EspressoBold'),
+      url('TTCompotes-EspressoBold.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-EspressoBold.woff2') format('woff2'),
+      url('TTCompotes-EspressoBold.woff') format('woff'),
+      url('TTCompotes-EspressoBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Citro';
+  src: url('TTCompotes-CitroBold.eot');
+  src: local('TT Compotes Citro Bold'), local('TTCompotes-CitroBold'),
+      url('TTCompotes-CitroBold.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-CitroBold.woff2') format('woff2'),
+      url('TTCompotes-CitroBold.woff') format('woff'),
+      url('TTCompotes-CitroBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Espresso';
+  src: url('TTCompotes-Espresso.eot');
+  src: local('TT Compotes Espresso'), local('TTCompotes-Espresso'),
+      url('TTCompotes-Espresso.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-Espresso.woff2') format('woff2'),
+      url('TTCompotes-Espresso.woff') format('woff'),
+      url('TTCompotes-Espresso.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Compotes Citro';
+  src: url('TTCompotes-Citro.eot');
+  src: local('TT Compotes Citro'), local('TTCompotes-Citro'),
+      url('TTCompotes-Citro.eot?#iefix') format('embedded-opentype'),
+      url('TTCompotes-Citro.woff2') format('woff2'),
+      url('TTCompotes-Citro.woff') format('woff'),
+      url('TTCompotes-Citro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

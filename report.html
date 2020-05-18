@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Отчет</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+
+
+  <script type="text/javascript" defer>
+    var Info = {
+      "name": "Дон и РУСТА",
+      "list": [
+        {
+          // Главная 
+          "name": "Главная",
+          "time": 16,
+          "ready": 0,
+          "link": "main.html"
+        },
+        {
+          // контакты
+          "name": "Контакты - контактная информация",
+          "time": 3,
+          "ready": 0,
+          "link": "contacts-inform.html"
+        },
+        {
+          // контакты
+          "name": "Контакты - Реквизиты",
+          "time": 2,
+          "ready": 0,
+          "link": "Contacts-requisites.html"
+        },
+        {
+          // Обратная связь
+          "name": "Контакты - Обратная связь",
+          "time": 1,
+          "ready": 0,
+          "link": "requisites-feedback.html"
+        },
+        {
+          // О компании
+          "name": "О компании",
+          "time": 4,
+          "ready": 0,
+          "link": "about.html"
+        },
+       
+        {
+          // Новости
+          "name": "Новости",
+          "time": 2,
+          "ready": 0,
+          "link": "news.html"
+        },
+        {
+          // Услуги
+          "name": "Услуги - логистические услуги",
+          "time": 2,
+          "ready": 0,
+          "link": "services-logistics.html"
+        },
+        {
+          // Услуги
+          "name": "Услуги - Таможенное оформление",
+          "time": 1,
+          "ready": 0,
+          "link": "services-customs-reg.html"
+        },
+        {
+          // Услуги
+          "name": "Услуги - Таможенный консалтинг",
+          "time": 1,
+          "ready": 0,
+          "link": "services-customs-consulting.html"
+        },
+        {
+          // Услуги
+          "name": "Услуги - Таможенный транзит",
+          "time": 1,
+          "ready": 0,
+          "link": "services-customs-transit.html"
+        },
+        {
+          // Услуги
+          "name": "Услуги - Электронная подпись и ПО",
+          "time": 4,
+          "ready": 0,
+          "link": "services-electronic-signature.html"
+        },
+        {
+          // Руста Воронеж
+          "name": "Руста-Воронеж-сертификация",
+          "time": 1,
+          "ready": 0,
+          "link": "Rusta-Voronezh-sevcertificate.html"
+        },
+        {
+          // Руста Воронеж
+          "name": "Руста-Воронеж-криптопро",
+          "time": 1,
+          "ready": 0,
+          "link": "Rusta-Voronezh-cripto.html"
+        },
+        {
+          // Руста Воронеж
+          "name": "Руста-Воронеж-лицензии и сертификаты",
+          "time": 1,
+          "ready": 0,
+          "link": "Rusta-Voronezh-license.html"
+        },
+        {
+          // Альта - софт
+          "name": "Альта-Софт",
+          "time": 1,
+          "ready": 0,
+          "link": "Alta-soft.html"
+        },
+        {
+          // Альта - софт
+          "name": "Альта-Софт-ПО",
+          "time": 4,
+          "ready": 0,
+          "link": "Alta-soft-PO.html"
+        },
+        {
+          // Альта - софт
+          "name": "Альта-Софт-ПО-Альта-гтд",
+          "time": 2,
+          "ready": 0,
+          "link": "Alta-soft-PO-gtd.html"
+        },
+        {
+          // Альта - софт
+          "name": "Альта-Софт-Электронное декларирование",
+          "time": 1,
+          "ready": 0,
+          "link": "Alta-soft-el-declaration.html"
+        },
+        {
+          // Альта - софт
+          "name": "Альта-Софт-Обучение декларантов",
+          "time": 1,
+          "ready": 0,
+          "link": "Alta-soft-declarant-training.html"
+        },
+        {
+          // Альта - софт
+          "name": "Альта-Софт-Электронная подпись",
+          "time": 1,
+          "ready": 0,
+          "link": "Alta-soft-el-signature.html"
+        },
+        {
+          // Документация
+          "name": "Документация",
+          "time": 1,
+          "ready": 0,
+          "link": "documentation.html"
+        },
+      ]
+    }
+
+    $(document).ready(function () {
+      let allTime = 0
+      let curTime = 0
+      $('body').append(`
+          <div class="heading">${Info.name}<div/>
+          <div class="times">Готово: <span> <span> </div>
+        `)
+      Info.list.forEach(function (item, index) {
+        let imgOk
+
+        allTime += item.time
+        curTime += item.ready
+
+        if (item.ready == item.time) {
+          imgOk = "https://image.flaticon.com/icons/svg/752/752683.svg"
+        }
+        else {
+          imgOk = "https://image.flaticon.com/icons/svg/753/753345.svg"
+        }
+        let widthLine = item.ready * 100 / item.time
+        $('body').append(`
+          <div class="item" >
+            <div class="item-progress" data-width="${widthLine}%"></div>
+            <div class="item-name item-item">
+              ${item.name}
+            </div>
+            <div class="item-time item-item">
+              ${item.ready}/${item.time}
+            </div>
+            <div class="item-link item-item">
+              <a href="${item.link}"> ${item.name}</a>
+            </div>
+            <div class="item-img item-item">
+              <img src="${imgOk}"/>
+            </div>
+          </div>
+        `)
+        $('.times span').html(`${curTime} / ${allTime} | ${Math.floor(curTime * 100 / allTime)} %`)
+
+      })
+
+      $('.item-progress').each(function () {
+        $(this).css({
+          width: $(this).data("width")
+        })
+      })
+
+    })
+  </script>
+
+
+  <style>
+    body {
+      background-color: #4b4b4b;
+      color: #fff;
+      font-family: 'Russo One', sans-serif;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 2px solid #fff;
+    }
+
+    a:hover {
+      border-color: transparent;
+    }
+
+    .heading {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-top: 20px;
+      letter-spacing: 0.04em;
+
+    }
+
+    .times {
+      margin-bottom: 40px;
+      padding-top: 20px;
+      font-size: 28px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 15px;
+      background-color: #86f17221;
+    }
+
+    .item-item {
+      width: 25%;
+      height: 100%;
+      padding: 15px;
+      font-size: 20px;
+      line-height: 1.5em;
+    }
+
+    .item-img img {
+      width: 40px;
+      height: auto;
+    }
+
+    .item-progress {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(68, 226, 68, 0.568);
+      z-index: -1;
+      transition: 2s;
+      transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      width: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+</body>
+
+</html>
