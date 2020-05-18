@@ -1,0 +1,26 @@
+.main_banner {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  align-items: flex-end;
+}
+
+.main_banner_img img{
+  width: 100%;
+}
+
+.main_banner_content {
+  position: relative;
+  .main_banner_about {
+    position: absolute;
+    left: 50px;
+    bottom: 150px;
+  }
+}
+
+.main_banner_content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-color: #0C447A;
+}

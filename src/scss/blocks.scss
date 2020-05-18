@@ -1,0 +1,48 @@
+.header_wrap {
+  display: -webkit-box;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.header_logo {
+  padding: 20px 45px;
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  background: #0C447A;
+
+  nav {
+    width: 100%;
+
+    .header_nav_wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      padding: 0 45px;
+      align-items: center;
+
+      li {
+        .header_nav_item {
+          font-size: 12px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.header_application {
+  padding: 15px 45px;
+  background: #EC9454;
+  color: #ffffff;
+  cursor: pointer;
+  span {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
