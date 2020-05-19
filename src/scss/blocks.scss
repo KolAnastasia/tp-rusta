@@ -1,17 +1,34 @@
+.page-wrap {
+  overflow: hidden;
+}
+
 .header_wrap {
   display: -webkit-box;
   display: grid;
   grid-template-columns: max-content 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header_logo {
-  padding: 20px 45px;
+  padding: 20px 45px 22px 40px;
 }
 
 .header_menu {
   display: flex;
   align-items: center;
   background: #0C447A;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 0;
+    width: 2300px;
+    height: 100%;
+    background: #0C447A;
+  }
 
   nav {
     width: 100%;
@@ -30,6 +47,23 @@
           text-transform: uppercase;
           text-decoration: none;
           color: #ffffff;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid #ffffff;
+            width: 0;
+            height: 1px;
+            bottom: -5px;
+            left: 0;
+            transition: .2s;
+          }
+
+          &:hover::before {
+            width: 100%;
+            transition: .2s;
+          }
         }
       }
     }
@@ -37,12 +71,186 @@
 }
 
 .header_application {
-  padding: 15px 45px;
+  padding: 15px 15px;
   background: #EC9454;
   color: #ffffff;
   cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  align-items: center;
+  transition: .2s;
+
+  .link-more_text {
+    text-transform: uppercase;
+  }
+
   span {
     display: inline-block;
     margin-left: 5px;
+  }
+
+  &:hover {
+    transition: .2s;
+  }
+}
+
+.subtitle-center {
+  text-align: center;
+}
+
+.main_subtitle {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 40px 0;
+}
+
+.main_title {
+  margin: 0 0 50px 0;
+  font-size: 34px;
+  font-weight: bold;
+  color: #303234;
+
+}
+
+.link-more {
+  display: flex;
+  text-decoration: none;
+
+  &_text {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &_icon {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    transition: .2s;
+
+  }
+
+  &:hover {
+    .link-more_icon {
+      margin-left: 10px;
+      transition: 0.2s;
+    }
+  }
+}
+
+.last-section-wrap {
+  padding-bottom: 175px;
+}
+
+.footer_wrap {
+  padding: 0 45px;
+  max-width: 1440px;
+  margin: 0 auto;
+  &_top {
+    border-top: 1px solid #D8D9DD;
+    padding: 45px 0 55px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_bottom {
+    padding: 35px 0;
+    border-top: 1px solid #D8D9DD;
+    display: flex;
+    justify-content: space-between;
+    
+    .footer_copyright {
+      font-size: 12px;
+    }
+
+    .footer_developer {
+      font-size: 14px;
+      color: #B7B7B7;
+      display: flex;
+      &_link {
+        margin-left: 15px;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .footer_item {
+    &_subtitle {
+      font-weight: bold;
+      font-size: 14px;
+      color: #B6B6B6;
+      margin-bottom: 10px;
+    }
+
+    .footer_address {
+      margin-bottom: 20px;
+    }
+
+    .footer_tel {
+      margin-bottom: 30px;
+
+      &_content a {
+        font-size: 17px;
+        color: #303234;
+        text-decoration: none;
+        margin-bottom: 5px;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .footer_mail {
+      &_content a {
+        font-weight: bold;
+        font-size: 16px;
+        color: #0C447A;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-mail {
+      padding-top: 30px;
+
+      .footer_nav-link {
+        display: block;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #303234;
+        text-decoration: none;
+        margin-bottom: 24px;
+        position: relative;
+        width: fit-content;
+
+        &::before {
+          position: absolute;
+          content: "";
+          border-bottom: 2px solid #303234;
+          width: 0;
+          height: 1px;
+          bottom: -5px;
+          left: 0;
+          transition: .2s;
+        }
+
+        &:hover::before {
+          width: 100%;
+          transition: .2s;
+        }
+      }
+    }
   }
 }
