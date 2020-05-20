@@ -4,8 +4,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '0',
-      responsive: [
-         {
+      responsive: [{
             breakpoint: 1200,
             settings: {
                slidesToShow: 3,
@@ -29,11 +28,13 @@ $(document).ready(function () {
       ]
    })
 
-   $(".sandwich-wrap").click(function() {
-      $(".sandwich-wrap").toggleClass("active");
+   $(".sandwich-wrap").click(function () {
+      $('.sandwich-wrap').toggleClass('active');
       $('.header_mob-menu').toggleClass('active')
-    });
-
+   });
+   // $(".sandwich-wrap.active").click(function () {
+   //    $('.header_mob-menu.active').fadeOut(200);
+   // });
    $('.header_application').click(function () {
       $('.form-wrap-request').fadeIn(200)
       $('.page-blur').toggleClass('page-wrap-fix')

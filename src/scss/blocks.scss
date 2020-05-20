@@ -13,6 +13,7 @@ $sandwich-h: 2px;
   right: 45px;
   margin: auto;
   transform: translateY(-50%);
+  z-index: 99;
 
   .sandwich-top {
     position: relative;
@@ -53,42 +54,50 @@ $sandwich-h: 2px;
     .sandwich-top {
       top: 3px;
       transform: rotate(140deg);
+      background-color: #ffffff;
     }
 
     .sandwich-middle {
       top: 1px;
       transform: rotate(-140deg);
+      background-color: #ffffff;
     }
 
     .sandwich-bottom {
       opacity: 0;
       top: 0;
       transform: rotate(180deg);
+      background-color: #ffffff;
     }
   }
 }
 
 
 .header_mob-menu {
+  opacity: 0;
   position: absolute;
   right: 0;
   top: 0;
   background-color: #0F4F8C;
   padding: 80px 40px 70px 60px;
   z-index: 99;
-  width: 0;
-  height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .1s;
+  flex-direction: column;
+  width: 0;
+  visibility: hidden;
+  z-index: 9;
+  // transition: 0.3s;
+  // transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
   &.active {
     width: 100%;
-    height: auto;
     min-height: 100vh;
-    transition: .2s;
-    
+    transition: 0.3s;
+    visibility: visible;
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
   .header_mob-nav_wrap {
@@ -121,7 +130,7 @@ $sandwich-h: 2px;
       &:hover::before {
         width: 100%;
         transition: .2s;
-      } 
+      }
     }
   }
 
@@ -130,6 +139,7 @@ $sandwich-h: 2px;
     color: #ffffff;
     font-weight: normal;
     font-size: 14px;
+
     &:hover {
       text-decoration: none;
     }
@@ -142,6 +152,7 @@ $sandwich-h: 2px;
     display: block;
     text-decoration: none;
     color: #ffffff;
+
     &:hover {
       text-decoration: underline;
     }

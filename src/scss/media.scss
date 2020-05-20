@@ -7,6 +7,7 @@
     .header_application {
         width: 170px;
     }
+
     .main_banner {
         position: relative;
     }
@@ -28,7 +29,7 @@
         }
     }
 
-  
+
 }
 
 @media screen and (max-width: 1060px) {
@@ -36,10 +37,115 @@
         display: none;
     }
 }
+
 @media screen and (max-width: 981px) {
+
+    .header_logo {
+        padding-left: 20px;
+    }
+
+    .sandwich-wrap {
+        right: 20px;
+    }
+
     .main_trust_slider {
         .slick-arrow {
             display: none !important;
         }
     }
+
+    .main_banner {
+        grid-template-columns: 1fr;
+
+        .main_banner_content {
+            background: transparent;
+
+            &_tel {
+                display: none;
+            }
+
+            .main_banner_about {
+                position: relative;
+                right: auto;
+                bottom: auto;
+                top: auto;
+                left: 0;
+                width: 100%;
+                background: #F8F8F8;
+                padding: 40px 20px 140px 20px;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            .main_banner_about_desc_more {
+                left: 20px;
+                bottom: 50px;
+            }
+        }
+    }
+
+    .main_suggestion {
+        .main_suggestion_wrap {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            a {
+                width: 100%;
+                max-width: 255px;
+            }
+        }
+    }
+
+    .main_services_wrap {
+        flex-wrap: wrap;
+        &_decore {
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .main_achievement_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    .footer_wrap_top {
+        flex-wrap: wrap;
+        .footer_item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer_item-mail:first-of-type {
+            padding-top: 75px;
+        }
+
+        .footer_item-mail:last-of-type {
+            padding-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_news_wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_suggestion_wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .main_services_wrap_decore {
+        margin-top: 25px;
+    }
+    
+
 }
