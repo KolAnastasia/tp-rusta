@@ -8,8 +8,13 @@
   margin-bottom: 30px;
 }
 
-.main_banner_img img {
-  width: 100%;
+.main_banner_img {
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .main_banner_content {

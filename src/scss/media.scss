@@ -1,0 +1,45 @@
+@media screen and (max-width: 1290px) {
+
+    .header_logo {
+        padding: 20px 25px 22px 40px;
+    }
+
+    .header_application {
+        width: 170px;
+    }
+    .main_banner {
+        position: relative;
+    }
+
+    .main_banner_content {
+        position: initial;
+
+        .main_banner_about {
+            padding: 35px 35px 60px 35px;
+            left: 15px;
+            right: auto;
+            bottom: auto;
+            top: 15px;
+
+            &_title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+  
+}
+
+@media screen and (max-width: 1060px) {
+    .header_menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 981px) {
+    .main_trust_slider {
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+}

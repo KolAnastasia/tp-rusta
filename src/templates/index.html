@@ -12,6 +12,7 @@
 </head>
 
 <body class="page">
+    <div class="page-blur"></div>
     <div class="page-wrap">
         <header class="header">
             <div class="header_wrap">
@@ -19,6 +20,11 @@
                     <a href="#" class="header_logo_link">
                         <img src="../img/logo.png">
                     </a>
+                </div>
+                <div class="sandwich-wrap">
+                    <div class="sandwich-top"></div>
+                    <div class="sandwich-middle"></div>
+                    <div class="sandwich-bottom"></div>
                 </div>
                 <div class="header_menu">
                     <nav>
@@ -31,8 +37,9 @@
                             <li><a href="#" class="header_nav_item">контакты</a></li>
                             <li>
                                 <div class="header_application link-more"> <span class="link-more_text"> Подать
-                                        заявку</span> <span class="header_application_icon link-more_icon"><svg width="8" height="12"
-                                            viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        заявку</span> <span class="header_application_icon link-more_icon"><svg
+                                            width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1 1L6 6L1 11" stroke="white" stroke-width="1.5" />
                                         </svg></span>
                                 </div>
@@ -41,7 +48,52 @@
                     </nav>
 
                 </div>
+                <div class="header_mob-menu">
+                    <nav>
+                        <ul class="header_mob-nav_wrap">
+                            <li><a href="#" class="header_mob-nav_item">о КОМПАНИИ</a></li>
+                            <li><a href="#" class="header_mob-nav_item">Новости</a></li>
+                            <li><a href="#" class="header_mob-nav_item">Услуги</a></li>
+                            <li><a href="#" class="header_mob-nav_item">Руста-Воронеж</a></li>
+                            <li><a href="#" class="header_mob-nav_item">Альта-софт</a></li>
+                            <li><a href="#" class="header_mob-nav_item">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+74732219883" class="header_mob_tel-link"><span class="header_mob_mail-icon"><svg
+                                width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M13.6863 11.064L11.5242 8.9017C11.0935 8.47279 10.3804 8.48582 9.93472 8.93163L8.84545 10.0207C8.77664 9.98272 8.70541 9.94311 8.63051 9.90108C7.94265 9.51994 7.0012 8.99755 6.01052 8.00614C5.0169 7.01265 4.49403 6.06975 4.11173 5.38144C4.07138 5.30852 4.03273 5.23822 3.99456 5.17145L4.72562 4.44148L5.08503 4.08162C5.53137 3.63517 5.54367 2.92221 5.11403 2.49205L2.95195 0.329487C2.52231 -0.100073 1.80883 -0.0870413 1.3625 0.359412L0.753153 0.972259L0.769805 0.988789C0.565482 1.2495 0.394744 1.55019 0.267686 1.87446C0.150563 2.18311 0.0776419 2.47765 0.0442987 2.77279C-0.24119 5.13955 0.840352 7.3026 3.77552 10.2378C7.83281 14.2948 11.1025 13.9883 11.2435 13.9734C11.5507 13.9366 11.8451 13.8632 12.1443 13.747C12.4658 13.6215 12.7663 13.451 13.0268 13.2471L13.0401 13.2589L13.6575 12.6544C14.1029 12.2081 14.1157 11.4949 13.6863 11.064Z" />
+                                </g>
+                            </svg>
+                        </span>+7 (473) 221-98-83
+                    </a>
+                    <a href="mailto:mail@tp-rusta.ru" class="header_mob_mail-link"><span
+                            class="header_mob_mail-icon"><svg width="16" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M14.5936 1.90625H1.40606C1.18959 1.90625 0.986933 1.95947 0.803589 2.04719L7.96856 9.21216L9.57446 7.66881C9.57446 7.66881 9.57459 7.66866 9.57462 7.66859C9.57465 7.66853 9.57478 7.66847 9.57478 7.66847L15.1962 2.04731C15.0129 1.95953 14.8101 1.90625 14.5936 1.90625Z" />
+                                    <path
+                                        d="M15.8593 2.71021L10.5692 8.00002L15.8591 13.2899C15.9468 13.1066 16.0001 12.9039 16.0001 12.6875V3.31246C16.0001 3.09611 15.947 2.89349 15.8593 2.71021Z" />
+                                    <path
+                                        d="M0.140938 2.70984C0.0532188 2.89318 0 3.09584 0 3.31231V12.6873C0 12.9037 0.0531562 13.1063 0.140813 13.2896L5.43091 7.99981L0.140938 2.70984Z" />
+                                    <path
+                                        d="M9.90646 8.66303L8.30034 10.2066C8.20877 10.2981 8.08884 10.3439 7.96893 10.3439C7.84902 10.3439 7.72905 10.2981 7.63752 10.2066L6.0939 8.66296L0.803711 13.9528C0.987086 14.0406 1.18987 14.0939 1.4064 14.0939H14.5939C14.8104 14.0939 15.013 14.0407 15.1964 13.9529L9.90646 8.66303Z" />
+                                </g>
 
+                            </svg>
+                        </span> mail@tp-rusta.ru
+                    </a>
+                    <div class="header_mob_application link-more"> <span class="link-more_text"> Подать
+                            заявку</span> <span class="header_application_icon link-more_icon"><svg width="8"
+                                height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L1 11" stroke="white" stroke-width="1.5" />
+                            </svg></span>
+                    </div>
+
+                </div>
             </div>
         </header>
         <main class="home">
@@ -524,23 +576,43 @@
                 </div>
             </section>
         </main>
-<div class="form-wrap">
-    <form class="popup-form form-request">
-        <div class="form_icon-close"><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M8.576 9.49718L0 18.0732L0.926829 19L9.50283 10.424L18.0788 19L19.0057 18.0732L10.4297 9.49718L19 0.926829L18.0732 0L9.50283 8.57035L0.93248 0L0.00565131 0.926829L8.576 9.49718Z" fill="white"/>
-            </svg>
-            </div>
-        <div class="form_header">
-            <div class="form_header_title">Оставить заявку</div>
-            <div class="form_header_desc">Заполните форму и наш менеджер свяжется с Вами</div>
+        <div class="form-wrap form-wrap-request">
+            <form class="popup-form form-request">
+                <div class="form_header">
+                    <div class="form_icon-close"><svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.576 9.49718L0 18.0732L0.926829 19L9.50283 10.424L18.0788 19L19.0057 18.0732L10.4297 9.49718L19 0.926829L18.0732 0L9.50283 8.57035L0.93248 0L0.00565131 0.926829L8.576 9.49718Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="form_header_title">Оставить заявку</div>
+                    <div class="form_header_desc">Заполните форму и наш менеджер свяжется с Вами</div>
+                </div>
+                <div class="form_content">
+                    <input type="text" name="organization" placeholder="организация"
+                        class="form-request_input form-request_input-org" required>
+                    <input type="tel" name="telephone" placeholder="телефон"
+                        class="form-request_input form-request_input-tel" required>
+                    <input type="text" name="face-contact" placeholder="контактное лицо"
+                        class="form-request_input form-request_input-face" required>
+                    <input type="email" name="email" placeholder="электронная почта"
+                        class="form-request_input form-request_input-email" required>
+                    <div class="form_content_wrap">
+                        <textarea placeholder="сообщение" class="form-request_input form-request_input-message"
+                            name="message"></textarea>
+                        <div class="form-request_btn-wrap">
+                            <div class="agreement-wrap">
+                                <input type="checkbox" id="agreement" class="form-request_agremeent" required>
+                                <label for="agreement" class="agreement_text">Я согласен с условиями обработки
+                                    персональных данных</label>
+                            </div>
+                            <button class="btn btn-orange form_btn">отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="form_content">
-            <div class="form_content_left">
-                <input type="text" placeholder="организация" class="form-request_input">
-            </div>
-        </div>
-    </form>
-</div>
         <footer class="footer">
             <div class="footer_wrap">
                 <div class="footer_wrap_top">
