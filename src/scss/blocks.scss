@@ -14,6 +14,7 @@ $sandwich-h: 2px;
   margin: auto;
   transform: translateY(-50%);
   z-index: 99;
+  display: none;
 
   .sandwich-top {
     position: relative;
@@ -80,15 +81,14 @@ $sandwich-h: 2px;
   top: 0;
   background-color: #0F4F8C;
   padding: 80px 40px 70px 60px;
-  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 0;
   visibility: hidden;
-  z-index: 9;
-  // transition: 0.3s;
+  // z-index: -100;
+  // transition: 0.2s;
   // transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
   &.active {
@@ -97,6 +97,7 @@ $sandwich-h: 2px;
     transition: 0.3s;
     visibility: visible;
     opacity: 1;
+    z-index: 9;
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
@@ -325,6 +326,7 @@ $sandwich-h: 2px;
 .last-section-wrap {
   padding-bottom: 175px;
 }
+
 
 .footer_wrap {
   padding: 0 45px;
@@ -630,4 +632,89 @@ $sandwich-h: 2px;
 
 .page-blur.page-wrap-fix {
   display: flex;
+}
+
+
+.main-inform-page {
+  padding: 70px 0 45px 0;
+
+  .breadcrumb {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      .breadcrumb-item {
+        margin-right: 50px;
+        position: relative;
+        margin-bottom: 5px;
+        &::after {
+          position: absolute;
+          content: "\2014";
+          top: 50%;
+          right: -35px;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: 16px;
+          height: 100%;
+        }
+
+        &:last-of-type::after {
+          display: none;
+        }
+
+        &:nth-last-of-type(2) {
+
+          color: #B6B6B6;
+        }
+
+        .breadcrumb-item_link {
+          font-weight: bold;
+          font-size: 12px;
+          letter-spacing: 0.05em;
+          color: #303234;
+          text-decoration: none;
+
+        }
+
+        &--active {
+          span.breadcrumb-item_link {
+            color: #B6B6B6;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+  .inner-page_nav {
+    display: flex;
+
+    &-link {
+      display: inline-block;
+      padding: 23px 20px;
+      background: #F3F3F3;
+      text-transform: uppercase;
+      color: #D9D9D9;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      transition: .2s;
+
+      &--active {
+        background: #0F4F8C;
+        color: #fff;
+      }
+
+      &:hover {
+        transition: .3s;
+        color: #fff;
+        background-color: #EC9454;
+      }
+    }
+  }
 }

@@ -32,9 +32,7 @@ $(document).ready(function () {
       $('.sandwich-wrap').toggleClass('active');
       $('.header_mob-menu').toggleClass('active')
    });
-   // $(".sandwich-wrap.active").click(function () {
-   //    $('.header_mob-menu.active').fadeOut(200);
-   // });
+
    $('.header_application').click(function () {
       $('.form-wrap-request').fadeIn(200)
       $('.page-blur').toggleClass('page-wrap-fix')
@@ -45,4 +43,9 @@ $(document).ready(function () {
       $('.page-blur').removeClass('page-wrap-fix')
       $('.page').css("overflow", "auto")
    })
+
+   $('.requisites-print-btn').click(function() {
+      print()
+   });
 });
+
