@@ -1,0 +1,155 @@
+.about-company_wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-company_left-content {
+        width: calc(51% - 50px);
+        margin-right: 80px;
+    }
+
+    .about-company_right-content {
+        width: calc(49% - 50px);
+    }
+
+    .about-company_advantage {
+        width: 100%;
+        display: flex;
+    }
+
+    .about-company_complex-services {
+        width: calc(51% - 50px);
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.35;
+        color: #303234;
+        margin-bottom: 50px;
+    }
+
+    .about-company_partners_wrap {
+        display: flex;
+    }
+
+    .about-company_registry {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #1e1f21;
+        margin-bottom: 63px;
+
+        a {
+            color: #1e1f21;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .about-company_tehnology {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #303234;
+        font-weight: 300px;
+        margin-bottom: 80px;
+    }
+
+
+    .about-company_advantage_item {
+        width: 33.33%;
+        padding: 75px 15px 90px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        span {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 22px;
+            color: #ffffff;
+        }
+
+        &-reliability {
+            background-image: url(../img/reliability.jpg);
+        }
+
+        &-safety {
+            background-image: url(../img/about-safety.jpg);
+        }
+
+        &-security {
+            background-image: url(../img/security.jpg);
+        }
+    }
+
+    .about-company_advantage {
+        margin-bottom: 80px;
+    }
+
+    .about-company_customs-stages {
+        margin-bottom: 80px;
+    }
+
+    .about-company_reliable-partner {
+        font-weight: bold;
+        font-size: 22px;
+        color: #303234;
+        margin-right: 55px;
+        margin-bottom: 80px;
+
+        &-r {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #303234;
+            margin-bottom: 58px;
+        }
+    }
+
+}
+
+.about-company_partners {
+    .about-subtitle {
+        margin-bottom: 55px;
+    }
+
+    .about-company_partners_wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-company_partners_item {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+
+        .about-company_partners_item_content {
+            border-right: 1px solid #D8D9DD;
+            padding-right: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            a {
+                display: block;
+                font-weight: normal;
+                color: #B6B6B6;
+                margin-top: 10px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:last-of-type .about-company_partners_item_content {
+            border-right: none;
+        }
+    }
+
+}

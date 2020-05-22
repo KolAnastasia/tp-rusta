@@ -1,0 +1,93 @@
+.services-logistic_desc {
+    max-width: 770px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #303234;
+    margin-bottom: 60px;
+}
+
+.services-logistic_type-wrap {
+    display: flex;
+
+    .services-logistic_type-item {
+        padding: 80px 30px 85px 30px;
+        width: 33.33%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &-water {
+            background-image: url(../img/logistic-type1.jpg);
+        }
+
+        &-auto {
+            background-image: url(../img/logistic-type.jpg);
+        }
+
+        &-railway {
+            background-image: url(../img/logistic-type2.jpg);
+        }
+
+        .services-logistic_type_title {
+            font-weight: bold;
+            font-size: 22px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        .services-logistic_type_desc {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.services-logistic_btn-wrap {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.services-logistic_btn_doc {
+    display: flex;
+    align-items: center;
+    padding: 16px 23px;
+    border: 2px solid #0F4F8C;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0F4F8C;
+    text-decoration: none;
+    transition: .2s;
+    svg {
+        margin-right: 20px;
+        path {
+            fill: #0F4F8C;
+            transition: .2s;
+        }
+    }
+
+    &:hover {
+        color: #ffffff;
+        background-color: #0F4F8C;
+        transition: .2s;
+        svg {
+            path {
+                fill: #ffffff;
+                transition: .2s;
+            }
+        }
+    }
+}
+
+.services-logistic_btn-app {
+    padding: 19px 18px;
+    border: 2px solid #EC9454;
+    &:hover {
+        border: 2px solid #EC9454;
+        color: #EC9454;
+        background-color: #ffffff;
+    }
+}

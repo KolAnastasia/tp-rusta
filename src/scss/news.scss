@@ -1,0 +1,114 @@
+.news_item {
+    padding: 21px 0 58px 0;
+    border-top: 1px solid #d9d9d9;
+
+    &:last-of-type {
+        padding-bottom: 25px;
+    }
+
+    &_date {
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 15px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #999999;
+    }
+
+    &_title {
+        font-weight: bold;
+        font-size: 22px;
+        color: #303234;
+        margin-bottom: 30px;
+    }
+
+    &_desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.65;
+        color: #303234;
+    }
+
+    .news_photo_wrap {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .news_photo_item {
+            max-width: 315px;
+            margin-right: 25px;
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.news_btn-more {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #0F4F8C;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 60px;
+
+    svg {
+        transition: 0.3s;
+    }
+
+    &:hover svg {
+        transform: rotate(-180deg);
+        transition: 0.3s;
+    }
+}
+
+.news_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .news_pagination_l {
+        display: inline-block;
+        margin-right: 30px;
+
+        svg circle {
+            fill: #D8D9DD;
+        }
+    }
+
+    .news_pagination_r {
+        display: inline-block;
+        transform: rotate(-180deg);
+    }
+    
+    .news_pagination_item {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        width: 27px;
+        height: 27px;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 14px;
+        color: #303234;
+        text-decoration: none;
+        &-active {
+            color: #0F4F8C;
+            border: 2px solid #0F4F8C;
+        }
+    }
+    
+    .btn-news_pagination_item-active {
+        svg circle {
+            fill: #0F4F8C;
+        }
+    }
+
+}
+

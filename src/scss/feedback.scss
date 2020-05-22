@@ -1,0 +1,31 @@
+.form-feedback-wrap {
+    .form_content {
+        display: block;
+        padding: 0;
+        padding-top: 15px;
+
+        .form-feedback_input {
+            width: 100%;
+            max-width: 430px;
+            display: block;
+        }
+
+        .agreement-wrap {
+            padding: 10px 0 25px 0;
+        }
+
+        .form-feedback_btn {
+            display: inline-block;
+            width: auto;
+            float: none;
+            padding: 23px 50px;
+        }
+
+        .agreement_text::before {
+            left: 0;
+            bottom: auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
