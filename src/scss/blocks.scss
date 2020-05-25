@@ -7,6 +7,7 @@ $sandwich-h: 2px;
 
 .home section:last-of-type {
   padding-bottom: 170px;
+  margin-bottom: 0;
 }
 
 
@@ -291,6 +292,10 @@ $sandwich-h: 2px;
   font-weight: bold;
   line-height: 1.2;
   margin: 0 0 40px 0;
+}
+
+.inner-subtitle {
+  font-size: 22px;
 }
 
 .main_title {
@@ -695,7 +700,7 @@ $sandwich-h: 2px;
 
   .inner-page_nav {
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 80px;
 
     &-link {
       display: inline-block;
@@ -733,6 +738,7 @@ $sandwich-h: 2px;
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
   column-gap: 25px;
+
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -751,7 +757,97 @@ $sandwich-h: 2px;
   width: 100%;
 }
 
-.inner-decore-img + .main-inform-page {
+.inner-decore-img+.main-inform-page {
   padding-top: 33px;
 }
 
+.section_desc--flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .section_desc-content-l {
+    width: calc(49% - 25px);
+    margin-right: 50px;
+  }
+
+  .section_desc-content-r {
+    width: calc(50% - 20px)
+  }
+
+  .section_desc-l-bigger {
+    width: 100%;
+    max-width: 770px;
+  }
+}
+
+.home section {
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.number-list {
+  display: flex;
+
+  &_title {
+    width: calc(30% - 40px);
+    margin-right: 58px;
+  }
+
+  &_content {
+    width: calc(70% - 40px);
+  }
+
+  &_row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &_number {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0F4F8C;
+    margin-right: 30px;
+    line-height: 1.3;
+  }
+
+  &_desc {
+    line-height: 1.6;
+  }
+}
+
+.list-mark ul {
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 130%;
+  .list-mark-item {
+    margin-bottom: 20px;
+    position: relative;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #0C447A;
+      opacity: 0.5;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+  }
+}

@@ -161,9 +161,14 @@
 
 @media screen and (max-width: 768px) {
 
+    .main-inform-page .inner-page_nav {
+        margin-bottom: 50px;
+    }
+
     .inner-page_title {
         margin-bottom: 40px;
     }
+
     .main_news_wrap {
         grid-template-columns: 1fr 1fr;
     }
@@ -282,15 +287,18 @@
     .about-company_partners {
         .about-company_partners_wrap {
             display: block;
+
             .about-company_partners_item {
                 display: grid;
                 grid-template-columns: 133px 1fr;
                 grid-column-gap: 15px;
                 padding-left: 0;
                 margin-bottom: 25px;
+
                 img {
                     margin: 0 auto;
                 }
+
                 &:last-of-type {
                     margin-bottom: 0;
                 }
@@ -301,7 +309,7 @@
                 }
             }
         }
-    }  
+    }
 
     .main-inform-page {
         .inner-page_nav {
@@ -316,9 +324,81 @@
 
     .services-logistic_type-wrap {
         display: block;
+
         .services-logistic_type-item {
             width: 100%;
             margin-bottom: 10px;
+        }
+    }
+
+    .section_desc--flex {
+        .section_desc-content-l {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        .section_desc-content-r {
+            width: 100%;
+        }
+    }
+
+    .customs-reg-desc {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .custom-reg-for-wrap {
+        .custom-reg-for-l {
+            font-size: 16px;
+        }
+
+        .custom-reg-for-r {
+            margin-bottom: 40px;
+        }
+    }
+
+    .custom-reg_services {
+        margin-bottom: 40px;
+    }
+
+    .customs-consalt-desc-l,
+    .customs-consalt_experience .customs-consalt_exp-l {
+        font-size: 16px;
+    }
+
+    section.customs-consalt-trust {
+        margin-bottom: 25px;
+
+        .section_desc--flex .section_desc-l-bigger {
+            font-size: 16px;
+        }
+    }
+
+    .number-list {
+        flex-wrap: wrap;
+
+        &_title {
+            width: 100%;
+        }
+
+        &_content {
+            width: 100%;
+        }
+    }
+
+    .services-es_cost_wrapper .services-es_cost-l_wr {
+        margin-right: 39px;
+    }
+
+    .rusta-trust_partners_wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        .rusta-trust_partners_item {
+            margin-bottom: 25px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
     }
 }
@@ -377,6 +457,7 @@
         flex-direction: column;
         align-items: center;
         align-items: baseline;
+
         .services-logistic_btn_doc {
             margin-bottom: 15px;
         }
@@ -384,6 +465,16 @@
         .services-logistic_btn-app {
             width: 200px;
         }
+    }
+
+    .services-es_cost_wrapper .services-es_cost-l_wr {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .services-es_cost-l_wr:nth-of-type(2) {
+        max-width: 100%;
     }
 
 }
@@ -400,10 +491,6 @@
 
     .services-logistic_type-wrap .services-logistic_type-item {
         padding: 50px 15px 65px 15px;
-    }
-
-    .news_item .news_photo_wrap .news_photo_item {
-        
     }
 }
 

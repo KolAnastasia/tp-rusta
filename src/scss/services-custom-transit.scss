@@ -1,0 +1,24 @@
+section.custmos-transit-document {
+    .section_desc--flex .section_desc-l-bigger {
+        max-width: 410px;
+    }
+}
+
+section.custmos-transit-decl {
+    .section_desc--flex .section_desc-l-bigger {
+        max-width: 745px;
+    }
+}
+
+.customs-transit_inform-l {
+    line-height: 1.6;
+    font-weight: 300;
+    a {
+        text-decoration: none;
+        color: #303234;
+        font-weight: 300;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.alta-soft-vrn-subtitle {
+    max-width: 455px;
+}
+
+.alta-soft_tel {
+    font-weight: 300;
+    margin-bottom: 10px;
+    a {
+        color: #303234;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.alta-soft_mail {
+    a {
+        color: #0F4F8C;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.alta-gtd_pluses_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+    row-gap: 50px;
+    column-gap: 37px;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+    .alta-gtd_pluses_item_numer {
+        font-size: 22px;
+        color: #0F4F8C;
+        margin-bottom: 10px;
+    }
+
+    .alta-gtd_pluses_item_desc {
+        padding-top: 30px;
+        border-top: 1px solid #0F4F8C;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 160%;
+        color: #5E5E5E;
+    }
+}

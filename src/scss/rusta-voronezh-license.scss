@@ -1,0 +1,52 @@
+.rusta-license-wrap {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 320px));
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    }
+    @media screen and (max-width: 420px) {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .rusta-license-item {
+        border: 2px solid #D8D9DD;
+        padding: 30px;
+        position: relative;
+
+        .rusta-license-item_format {
+            font-weight: bold;
+            font-size: 24px;
+            color: #FF6754;
+            margin-bottom: 20px;
+        }
+
+        .rusta-license-item_title {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 160%;
+            margin-bottom: 40px;
+
+        }
+
+        .rusta-license-item_link {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #0F4F8C;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+.documentation-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(315px, 320));
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    }
+}

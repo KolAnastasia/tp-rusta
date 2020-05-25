@@ -1,0 +1,152 @@
+.services-es_use-l {
+    line-height: 160%;
+}
+
+.services-es_use-l {
+    margin-bottom: 50px;
+}
+
+.services-es_use_table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 768px;
+    box-sizing: border-box;
+}
+
+.services-es_use_table_row {
+    padding-left: 23px;
+    display: flex;
+    flex-direction: row;
+
+    &-title {
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    &:nth-of-type(2n-1) {
+        background-color: #F2F3F7;
+    }
+
+    div {
+        border-right: 1px solid #D8D9DD;
+        padding: 23px 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-of-type {
+            display: block;
+            text-align: left;
+        }
+
+        &:nth-of-type(2n-1) {
+            width: 26%;
+        }
+
+        &:nth-of-type(2n) {
+            width: 24%;
+        }
+
+        &:last-of-type {
+            border-right: none;
+        }
+
+
+    }
+}
+
+.services-es_use_table-wrap {
+    overflow-x: auto;
+}
+
+.services-es_procedure_wrap {
+    padding-top: 40px;
+    border-top: 1px solid #B4B4B4;
+}
+
+.services-es_cost_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .services-es_cost-l_wr {
+        width: calc(50% - 40px);
+        margin-right: 115px;
+    }
+
+    .services-es_cost_value {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 100%;
+        color: #0C447A;
+        margin-bottom: 10px;
+    }
+
+    .services-es_cost_pay {
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+
+    .services-es_cost_footnote {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 160%;
+        color: #858585;
+    }
+
+}
+
+
+.services-es_cost-r {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    color: #303234;
+}
+
+
+.services-es_cost-l {
+    .inner-subtitle {
+        margin-bottom: 50px;
+    }
+}
+
+.services-es_cost-l_wr:nth-of-type(2) {
+    margin-right: 0;
+    max-width: 175px;
+    margin-bottom: 50px;
+}
+
+.services-es_maker_content {
+    font-weight: 300;
+    .services-es_maker_name {
+        margin-bottom: 20px;
+    }
+    .services-es_maker_tel {
+        margin-bottom: 20px;
+        a {
+            color: #303234;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .services-es_maker_mail {
+        margin-bottom: 20px;
+        a {
+            color: #0F4F8C;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
