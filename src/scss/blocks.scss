@@ -92,10 +92,11 @@ $sandwich-h: 2px;
   align-items: center;
   flex-direction: column;
   width: 0;
+  max-width: 0;
   visibility: hidden;
   // z-index: -100;
-  // transition: 0.2s;
-  // transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 0.2s max-width;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
   &.active {
     width: 100%;
@@ -104,6 +105,9 @@ $sandwich-h: 2px;
     visibility: visible;
     opacity: 1;
     z-index: 9;
+    transition: 0.2s;
+    max-width: 100%;
+    transition: .2s max-width;
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
@@ -294,7 +298,7 @@ $sandwich-h: 2px;
   margin: 0 0 40px 0;
 }
 
-.inner-subtitle {
+.inner_subtitle {
   font-size: 22px;
 }
 

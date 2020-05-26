@@ -5,9 +5,11 @@
 .alta-soft_tel {
     font-weight: 300;
     margin-bottom: 10px;
+
     a {
         color: #303234;
         text-decoration: none;
+
         &:hover {
             text-decoration: underline;
         }
@@ -17,6 +19,7 @@
 .alta-soft_mail {
     a {
         color: #0F4F8C;
+
         &:hover {
             text-decoration: none;
         }
@@ -28,9 +31,11 @@
     grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
     row-gap: 50px;
     column-gap: 37px;
+
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
+
     .alta-gtd_pluses_item_numer {
         font-size: 22px;
         color: #0F4F8C;
@@ -45,4 +50,233 @@
         line-height: 160%;
         color: #5E5E5E;
     }
+}
+
+.alta-es-desc {
+    .section_desc--flex .section_desc-content-l {
+        width: calc(60% - 25px);
+        margin-right: 50px;
+        line-height: 1.6;
+    }
+}
+
+.alta-es-start {
+    .section_desc--flex .section_desc-content-l {
+        width: calc(53% - 25px);
+        margin-right: 50px;
+        line-height: 1.6;
+    }
+}
+
+section.alta-es-start {
+    margin-bottom: 90px;
+}
+
+.slta-es-result {
+    padding: 52px 0;
+    background: url(../img/bg-section.jpg) center no-repeat;
+    background-size: cover;
+
+    .slta-es-result-wrap {
+        .alta-btn-wrap {
+            margin-top: 20px;
+        }
+
+        .section_desc--flex .section_desc-content-l {
+            width: calc(51% - 25px);
+            color: #fff;
+            line-height: 1.6;
+            font-size: 18px;
+
+        }
+
+
+    }
+
+    .alta-es-btn {
+        padding: 22px 40px;
+    }
+
+    .alta-es-btn:hover {
+        background: #E96E14;
+    }
+}
+
+section.slta-es-result {
+    padding-bottom: 50px !important;
+}
+
+.alta-dectr-desc-l {
+    line-height: 1.6;
+}
+
+.alta-dectr_wrap {
+    border-top: 1px solid #B4B4B4;
+    padding-top: 50px;
+}
+
+.alta-dectr-dist_form {
+    font-weight: bold;
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 30px;
+}
+
+.alta-dectr-dist_more {
+    margin-top: 50px;
+    display: flex;
+}
+
+.alta-dectr-dist_more-l {
+    margin-right: 100px;
+}
+
+.alta-dectr-dist_more-duration {
+    font-weight: bold;
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 20px;
+}
+
+.alta-dectr-dist_more-duration_val {
+    font-weight: bold;
+    font-size: 34px;
+    color: #0C447A;
+    margin-bottom: 10px;
+}
+
+.alta-dectr-dist_group {
+    font-weight: bold;
+    font-size: 14px;
+    color: #303234;
+    margin-bottom: 10px;
+}
+
+.alta-eldecl_abbrev {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alta-eldecl_abbrev-l {
+    margin-right: 50px;
+}
+
+.alta-eldecl-desc {
+    .section_desc--flex .section_desc-content-l {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+.b-text {
+    font-weight: bold;
+}
+
+.alta-eldecl_abbrev_item {
+    margin-bottom: 15px;
+}
+
+.number-list.alta-eldecl_article_wrap {
+    padding-top: 50px;
+    border-top: 1px solid #B4B4B4;
+}
+
+.alta-eldecl_article_footnote {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.alta-eldecl_article_wrap {
+    .inner_subtitle {
+        margin-bottom: 10px;
+    }
+}
+
+.alta-po_btn {
+    background-color: #ffffff;
+    color: #303234;
+    cursor: pointer;
+    padding: 40px 0;
+    width: 100%;
+    text-align: left;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    position: relative;
+    border-top: 1px solid #D1D1D1;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+// .alta-po_item_wrap {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+// }
+
+// a.alta-po_item {
+//     display: block;
+// }
+
+.alta-po_item {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.alta-po_item_wrap {
+    display: grid;
+    background-color: white;
+    padding: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-gap: 25px;
+}
+
+.alta-po_item_link {
+    padding: 30px 50px 60px 50px;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    display: flex;
+    &:hover {
+        background: #F8F8F8;
+        border: 1px solid transparent;
+    }
+}
+
+.alta-po_btn:after {
+    content: '';
+    position: absolute;
+    background-color: #303234;
+    height: 2px;
+    width: 25px;
+    color: #777;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.alta-po_btn::before {
+    content: '';
+    position: absolute;
+    background-color: #303234;
+    height: 25px;
+    width: 2px;
+    color: #777;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.alta-po-catalog_sec:last-of-type .alta-po_btn.active {
+    border-bottom: none;
+}
+
+.active.alta-po_btn::before {
+    transform: translateY(-50%) rotate(-90deg);
+    transition: .3s;
+}
+
+.alta-po-catalog_sec:last-of-type .alta-po_btn {
+    border-bottom: 1px solid #CFCFCF;
 }
