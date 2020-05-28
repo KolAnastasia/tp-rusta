@@ -53,6 +53,12 @@ $(document).ready(function () {
    $('.inner-page_nav').click(function () {
       $('.inner-page_nav').toggleClass('active')
    })
+   $('.inner-page_nav-link').click(function (event) {
+      if(!$(event.currentTarget).parent(".inner-page_nav").hasClass("active")){
+         event.preventDefault();
+      }
+   })
+
 });
 
 // $(document).ready(function() {
