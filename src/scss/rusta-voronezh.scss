@@ -1,10 +1,19 @@
 .rusta-trust_partners_wrap {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
     align-items: center;
 }
 
 .rusta-sertificate-desc-r img{
     width: 100%;
     max-width: 454px;
+}
+
+.rusta-trust_partners_item {
+    padding: 80px 0;
+    border: 1px solid #F0F0F0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -209,6 +209,7 @@
   &_desc {
     line-height: 1.6;
     font-size: 14px;
+    max-width: 400px;
   }
 
   &_more {
@@ -347,6 +348,7 @@
   &_wrap {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .main_news_date {

@@ -47,20 +47,29 @@ $(document).ready(function () {
    $('.requisites-print-btn').click(function() {
       print()
    });
+
+   $('.fancybox-img').fancybox();
+
+   $('.inner-page_nav').click(function () {
+      $('.inner-page_nav').toggleClass('active')
+   })
 });
 
+// $(document).ready(function() {
+//     $.fancybox.open($('.fancybox-img'));
+// });
 
-let acc = document.getElementsByClassName("alta-po_btn");
-let i;
+// let acc = document.getElementsByClassName("alta-po_btn");
+// let i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     let panel = this.nextElementSibling;
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+//     }
+//   });
+// }

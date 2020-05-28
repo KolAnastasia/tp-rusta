@@ -13,6 +13,15 @@
         border: 2px solid #D8D9DD;
         padding: 30px;
         position: relative;
+        height: 100%;
+        span {
+            color:  #0F4F8C;
+            text-decoration-line: underline;
+            font-size: 12px;
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+        }
 
         .rusta-license-item_format {
             font-weight: bold;
@@ -26,20 +35,17 @@
             font-size: 14px;
             line-height: 160%;
             margin-bottom: 40px;
-
+            color: #303234;
         }
+    }
+}
 
-        .rusta-license-item_link {
-            position: absolute;
-            bottom: 30px;
-            left: 30px;
-            font-size: 12px;
-            line-height: 14px;
-            color: #0F4F8C;
-            &:hover {
-                text-decoration: none;
-            }
-        }
+
+.rusta-license-item_link {
+    display: inline-block;
+    text-decoration: none;
+    &:hover {
+        background-color: #f0f0f0;
     }
 }
 
@@ -47,6 +53,6 @@
 .documentation-wrap {
     grid-template-columns: repeat(auto-fit, minmax(315px, 320));
     @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
