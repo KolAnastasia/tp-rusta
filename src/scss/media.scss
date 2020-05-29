@@ -493,6 +493,13 @@
     }
 
 
+    .inactive-page_nav .inner-page_nav-link:first-of-type {
+        height: auto;
+        padding: 23px 15px;
+        max-height: 100%;
+        visibility: visible;
+    }
+    
     .inner-page_nav.active {
         max-height: 100%;
         overflow: initial;
