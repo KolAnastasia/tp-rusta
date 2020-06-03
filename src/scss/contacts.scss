@@ -79,6 +79,19 @@
         }
     }
 
+    .employee_icons-mess {
+        float: right;
+        margin-right: 45px;
+        @media screen and (max-width: 768px){
+            margin-right: 0;
+            float: none;
+        }
+        a {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+
 }
 
 .contacts-inform_item-employee_mail {

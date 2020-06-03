@@ -161,6 +161,15 @@
             }
         }
     }
+
+    .services-logistic_type-wrap {
+        display: block;
+
+        .services-logistic_type-item {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -346,15 +355,7 @@
         }
     }
 
-    .services-logistic_type-wrap {
-        display: block;
-
-        .services-logistic_type-item {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-    }
-
+   
     .section_desc--flex {
         .section_desc-content-l {
             width: 100%;

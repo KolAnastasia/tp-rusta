@@ -29,3 +29,24 @@
     font-size: 14px;
     line-height: 1.6;
 }
+
+.custom-reg_services_wrap {
+    .grid-blocks_item {
+        ul {
+            list-style:none;
+            padding-left: 0;
+            li {
+                position: relative;
+                padding-left: 10px;
+                &::before {
+                    content: "-";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 5px;
+                }
+            }
+        }
+    }
+}
