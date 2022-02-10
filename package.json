@@ -40,7 +40,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "eslint": "^5.0.1",
     "eslint-config-google": "^0.9.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2",
     "webpack": "^4.43.0"
   }
